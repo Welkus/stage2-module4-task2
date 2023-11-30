@@ -9,6 +9,8 @@ public class RealConnection implements Connection {
     private String password;
     private boolean isClosed;
 
+
+
     public RealConnection(String url, String login, String password) {
         this.url = url;
         this.login = login;
