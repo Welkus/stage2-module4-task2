@@ -13,6 +13,7 @@ public class ProxyConnection implements Connection {
 
 
     public void reallyClose() {
+        realConnection.close();
         ConnectionPool.getInstance().releaseConnection(ConnectionPool.getInstance().getConnection());
     }
 
